@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,400;1,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  background-color: darkgrey;
+}
+
+#snb {
+  display: none;
+}
+
+header {
+  position: relative;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #999;
+  padding: 5vh 5vw;
+}
+header #gnb {
+  display: flex;
+}
+header #gnb li {
+  margin: 0px 35px;
+}
+header #gnb li a {
+  font: 22px/1 "Shantell Sans";
+  color: #22160b;
+  letter-spacing: 2px;
+}
+header h1 a {
+  font: bold 50px/50px;
+  color: white;
+  font-family: "Shantell Sans", cursive;
+}
+header .btn-menu {
+  color: #22160b;
+  font-size: 34px;
+}
+header .sns {
+  display: flex;
+}
+header .sns li {
+  margin: 0px 10px;
+}
+header .sns li a {
+  font-size: 22px;
+  color: #22160b;
+}
+
+figure {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+figure video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+figure .text {
+  position: absolute;
+  right: 3vw;
+  top: 45%;
+  transform: translateY(-50%);
+}
+figure .text p {
+  font: normal 8vw/1 "Shantell Sans";
+  color: #22160b;
+}
+figure .text ul {
+  display: flex;
+  margin-top: 30px;
+}
+figure .text ul li {
+  margin: 0 30px;
+}
+figure .text ul li i {
+  font-size: 20px;
+  color: rgb(218, 218, 218);
+  margin-right: 10px;
+}
+figure .text ul li strong {
+  font: 14px/1 "Shantell Sans";
+  letter-spacing: 1px;
+}
+
+footer {
+  position: absolute;
+  z-index: 4;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  font: 18px/1 "arial";
+  letter-spacing: 2px;
+  color: black;
+  font-weight: bold;
+  padding: 7vh 5vw;
+}
+
+@media screen and (max-width: 1078px) {
+  header #gnb {
+    display: none;
+  }
+  header .sns {
+    display: none;
+  }
+  header .btn-menu {
+    display: block;
+  }
+  header #snb {
+    display: block;
+  }
+  header #snb .sub-menu {
+    position: absolute;
+    right: 5vw;
+    letter-spacing: 2px;
+    padding: 15px 25px;
+    border: 1px solid #22160b;
+    border-radius: 10px;
+    transition: 0.4s;
+  }
+  header #snb .sub-menu.hide {
+    opacity: 0;
+  }
+  header #snb .sub-menu li {
+    padding: 7px 0;
+    font: 18px/1 "Shantell Sans";
+    text-align: right;
+  }
+  header #snb .sub-menu li a i {
+    margin-left: 8px;
+  }
+  figure .text p {
+    font-size: 12vw;
+  }
+}/*# sourceMappingURL=style.css.map */
